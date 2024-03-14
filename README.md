@@ -15,8 +15,29 @@ import { multiply } from 'react-ntest-btn';
 OR
 import react-ntest-btn from 'react-ntest-btn';
 // ...
+# Methods1:
 
-const result = await multiply(3, 7);
+const handleMsg = () => {
+    ReactNtestBtn.testing(' sidoo', (error, response) => {
+      if (error != null) {
+        console.log('Failur!', error);
+      } else {
+        console.log('Message:- ', response);
+      }
+    });
+  };
+
+# Methods2:
+
+ const handleMsg1 = () => {
+    ReactNtestBtn.anothertesting(' testing another message', (error, response) => {
+      if (error != null) {
+        console.log('Failur!', error);
+      } else {
+        console.log('Message1:- ', response);
+      }
+    });
+  };
 ```
 
 ## Contributing

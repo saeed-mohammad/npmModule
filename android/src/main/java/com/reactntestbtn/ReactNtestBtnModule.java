@@ -46,4 +46,13 @@ public class ReactNtestBtnModule extends ReactContextBaseJavaModule {
     return true;
   }
 
+  @ReactMethod
+  public boolean anothertesting(String message, Callback callbackContext) throws JSONException {
+    // Convert JSONObject to WritableMap
+    WritableMap messagesConf = Arguments.createMap();
+    messagesConf.putString("message", message);
+    callbackContext.invoke(null, messagesConf);
+    return true;
+  }
+
 }
