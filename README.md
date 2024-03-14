@@ -1,6 +1,6 @@
 # react-ntest-btn
 
-test
+test package on npm for trial
 
 ## Installation
 
@@ -12,7 +12,8 @@ npm install react-ntest-btn
 
 ```js
 import { multiply } from 'react-ntest-btn';
-
+OR
+import react-ntest-btn from 'react-ntest-btn';
 // ...
 
 const result = await multiply(3, 7);
